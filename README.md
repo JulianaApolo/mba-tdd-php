@@ -46,9 +46,17 @@ Suba um container com o php:
 docker-compose up --build -d
 ```
 
-Entre no container, instale o composer e rode os testes:
+Entre no container:
 ```
 docker-compose exec app bash
+```
+
+Instale o composer:
+```
 composer install
+```
+
+Rode os testes:
+```
 ./vendor/bin/phpunit tests
 ```
